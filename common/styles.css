@@ -5,50 +5,58 @@
 }
 
 :root {
+    /*font for headings*/
     --font-mono: "Lucida Sans Typewriter", "Lucida Console", Monaco,
                  "Bitstream Vera Sans Mono", ui-monospace, SFMono-Regular,
                  Menlo, Consolas, "Liberation Mono", monospace;
+    
+    /*font for paragraphs*/
+    --font-sans: Futura, "Trebuchet MS", Arial, sans-serif; 
+    
+    /*page background colors*/
+    --bg:  #f0ead2;
   }
   
 body {
 font-family: var(--font-mono);
+background-color: var(--bg);
 }
 
 /* For fonts & Text */
-h1{
+h1 {
     font-family: var(--font-mono);
-    font-size: 24px;
+    font-size: 50px;
     font-weight: 700;
-    line-height: 26.4px;
+    line-height: 51.4px;
     margin: 0 0 12px;
-    color: #2f6354;
+    color: #41521f;
   }
   
-  h3{
+  h3 {
     font-family: var(--font-mono);
-    font-size: 14px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 15.4px;
+    line-height: 30.4px;
     margin: 0 0 8px;
-    color: #C4683B;
+    color: #adc178;
   }
   
-  p{
-    font-family: var(--font-mono);
-    font-size: 14px;
+  p {
+    font-family: var(--font-sans);
+    font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     margin: 0 0 12px;
     color: var(--text);
-    color: #4a79d1;
+    color: #7f5539;
   }
-  
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background-color: #d6a955;
+    background-color: #a68a64;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,7 +67,7 @@ h1{
 .navbar-title {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #4b3214;
+    color: #adc178;
 }
 
 .navbar-links {
@@ -76,11 +84,19 @@ h1{
 }
 
 .navbar-links a:hover {
-    background-color: #13451b;
+    background-color: #414833;
 }
 
 .navbar-links a.active {
-    background-color: #bdd2e8;
+    background-color: #adc178;
+}
+
+.homepage-img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 390px;
+    height: auto;
 }
 
 .content {
@@ -89,7 +105,43 @@ h1{
     padding-right: 24px;
 }
 
-@media (max-width: 768px) {
+.selection-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+  }
+  
+  .selection-item {
+    margin: 12px 0;
+  }
+  
+  .game-links {
+    color: #2f6354;          
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .game-links:hover {
+    border-bottom-color: #414833;
+  }
+  
+  .game-author {
+    color: #479957;
+  }
+
+  .rules-img {
+    transition: transform 150ms ease;
+  }
+  
+  .rules-img:hover {
+    transform: rotate(1.5deg) scale(1.02);
+  }
+  
+  .space-bottom-paragraph {
+    margin-bottom: 30px;
+  }
+@media (max-width: 390px) {
     .navbar {
         flex-direction: column;
         gap: 8px;
