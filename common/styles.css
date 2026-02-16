@@ -4,16 +4,22 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-mono: "Lucida Sans Typewriter", "Lucida Console", Monaco,
+                 "Bitstream Vera Sans Mono", ui-monospace, SFMono-Regular,
+                 Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  
 body {
-    font-family: Arial, sans-serif;
+font-family: var(--font-mono);
 }
-
+  
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background-color: #1a1a2e;
+    background-color: #d6a955;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,7 +30,7 @@ body {
 .navbar-title {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #e94560;
+    color: #4b3214;
 }
 
 .navbar-links {
@@ -41,11 +47,11 @@ body {
 }
 
 .navbar-links a:hover {
-    background-color: #16213e;
+    background-color: #13451b;
 }
 
 .navbar-links a.active {
-    background-color: #e94560;
+    background-color: #bdd2e8;
 }
 
 .content {
