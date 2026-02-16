@@ -5,9 +5,14 @@
 }
 
 :root {
+    /*font for headings*/
     --font-mono: "Lucida Sans Typewriter", "Lucida Console", Monaco,
                  "Bitstream Vera Sans Mono", ui-monospace, SFMono-Regular,
                  Menlo, Consolas, "Liberation Mono", monospace;
+    
+    /*font for paragraphs*/
+    --font-sans: Futura, "Trebuchet MS", Arial, sans-serif; 
+    /*page background colors*/
     --bg:  #f0ead2;
   }
   
@@ -17,7 +22,7 @@ background-color: var(--bg);
 }
 
 /* For fonts & Text */
-h1{
+h1 {
     font-family: var(--font-mono);
     font-size: 50px;
     font-weight: 700;
@@ -26,7 +31,7 @@ h1{
     color: #41521f;
   }
   
-  h3{
+  h3 {
     font-family: var(--font-mono);
     font-size: 28px;
     font-weight: 700;
@@ -35,8 +40,8 @@ h1{
     color: #adc178;
   }
   
-  p{
-    font-family: var(--font-mono);
+  p {
+    font-family: var(--font-sans);
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
