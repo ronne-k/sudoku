@@ -8,7 +8,7 @@
     --font-mono: "Lucida Sans Typewriter", "Lucida Console", Monaco,
                  "Bitstream Vera Sans Mono", ui-monospace, SFMono-Regular,
                  Menlo, Consolas, "Liberation Mono", monospace;
-    --bg:  #f6f1e7
+    --bg:  #f0ead2;
   }
   
 body {
@@ -23,7 +23,7 @@ h1{
     font-weight: 700;
     line-height: 51.4px;
     margin: 0 0 12px;
-    color: #2f6354;
+    color: #41521f;
   }
   
   h3{
@@ -32,7 +32,7 @@ h1{
     font-weight: 700;
     line-height: 30.4px;
     margin: 0 0 8px;
-    color: #C4683B;
+    color: #adc178;
   }
   
   p{
@@ -42,7 +42,7 @@ h1{
     line-height: 20px;
     margin: 0 0 12px;
     color: var(--text);
-    color: #4a79d1;
+    color: #7f5539;
   }
 
 .navbar {
@@ -50,7 +50,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background-color: #d6a955;
+    background-color: #a68a64;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@ h1{
 .navbar-title {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #4b3214;
+    color: #adc178;
 }
 
 .navbar-links {
@@ -78,11 +78,11 @@ h1{
 }
 
 .navbar-links a:hover {
-    background-color: #13451b;
+    background-color: #414833;
 }
 
 .navbar-links a.active {
-    background-color: #bdd2e8;
+    background-color: #adc178;
 }
 
 .homepage-img {
@@ -94,7 +94,7 @@ h1{
 }
 
 .content {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-left: 24px;
     padding-right: 24px;
 }
