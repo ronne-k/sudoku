@@ -1,0 +1,51 @@
+.timer {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 16px 0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #333;
+    border: 3px solid #333;
+    padding: 4px;
+}
+
+.subgrid {
+    display: grid;
+    grid-template-columns: 48px 48px 48px;
+    grid-template-rows: 48px 48px 48px;
+    gap: 2px;
+    background-color: #999;
+}
+
+.board input {
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.board input.prefilled {
+    background-color: #e8e8e8;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .board {
+        max-width: 320px;
+    }
+
+    .subgrid {
+        grid-template-columns: 30px 30px 30px;
+        grid-template-rows: 30px 30px 30px;
+    }
+
+    .board input {
+        font-size: 0.8rem;
+    }
+}
